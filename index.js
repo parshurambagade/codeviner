@@ -21,12 +21,12 @@ gsap.from(".info-section", {
 gsap.set(".service-card", { y: 0, opacity:1}); // Corrected opacity value
 
 gsap.from(".service-card", {
-    duration: .5, 
+    duration: 0.5, 
     y: 400, 
     opacity: 0, // Corrected opacity value
     scrollTrigger: {
         trigger: ".services-container",
-        start: "top 70%",
+        start: "top 90%",
         end: "bottom 90%",
         scrub: true,
         markers: false,
@@ -34,35 +34,4 @@ gsap.from(".service-card", {
     },
     stagger: 0.1
 });
-
-gsap.set(".map", {x: 0, opacity: 1});
-
-gsap.from(".map", {
-    duration:2,
-    opacity: 0,
-    x: 400,
-    scrollTrigger: {
-        trigger: "#contact",
-        start: "top 70%",
-        end: "bottom 100%",
-        scrub: true,
-        markers: true,
-        // toggleActions: "restart none none none"
-    }
-})
-gsap.set(".contact-content", {x: 0, opacity: 1});
-
-gsap.from(".map", {
-    duration:2,
-    opacity: 0,
-    x: -400,
-    scrollTrigger: {
-        trigger: "#contact",
-        start: "top 70%",
-        end: "bottom 100%",
-        scrub: true,
-        markers: true,
-        // toggleActions: "restart none none none"
-    }
-})
 
