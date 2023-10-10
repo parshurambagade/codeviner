@@ -100,6 +100,7 @@ a{
 
 .nav-items a:hover{
     color: #E49E1F;
+
 }
 
 .icons{
@@ -149,6 +150,11 @@ a{
     font-size: 1.4rem;
     border-color:#e47513;
     padding:1rem 3rem;
+    transition: all ease-in-out 500ms;
+}
+
+.header-btn:hover{
+    background-color: #E49E1F;
 }
 
 /* SERVICES SECTION */
@@ -289,6 +295,11 @@ a{
     border-color:#e47513;
     padding:1rem 3rem;
     width:100%;
+    transition: all ease-in-out 500ms;
+}
+
+.contact-content form button:hover{
+    background-color: #E49E1F;
 }
 
 .map{
